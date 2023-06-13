@@ -56,7 +56,7 @@ body > header {
     border-bottom: 2px solid #ef6534;
 }
 
-.navbar-colapse { 
+.navbar-nav { 
     border-radius: 10px;
     overflow: hidden;
 }
