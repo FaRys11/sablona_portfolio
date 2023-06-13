@@ -130,7 +130,11 @@ footer a {
     margin-right: 6px;
 }
 
-
+@media (min-width: 768px) {
+    .navbar-nav > li > a.kontakt-tlacitko {
+        border-radius: 0;
+    }
+}
 
 
 
