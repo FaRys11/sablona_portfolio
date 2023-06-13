@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+html {
+          background: #414042;
+}
+body {
+    font: 14px "Poppins";
+    background: #f9f9f9;
+    color: #414042;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0px 0px 0px;
+    
+}
+
+body > header {
+    height: 100px;
+    width: 100%;
+    background: #00386B;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.navbar-nav > li > a {
+    color: #fff;
+    background-color: #00386B !important;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: initial;
+    border-bottom: 2px solid #EF6534;
+    color: #fff;
+}
+
+.navbar-nav > li > a.kontakt-tlacitko:hover,
+.navbar-nav > li > a.kontakt-tlacitko:focus,
+.navbar-nav > li > a.kontakt-tlacitko:active {
+    background-color: #ef6534 !important;
+}
+
+.aktivni {
+    border-bottom: 2px solid #ef6534;
+}
+
+.navbar-colapse { 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    height: 100px;
+    color: white;
+    background: #414042;
+    padding: 50px 0 0 0;
+    clip-path: polygon(0 30px, 100% 0, 100% 105%, 0 105%);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.avatar{
+	filter: grayscale(1);
+}
+
+.cistic {
+    clear: both;
+}
+
+.centrovany {
+    text-align: center;
+}
+
+.reference-tlacitko {
+    background: #70B73A;
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+.kontakt-tlacitko {
+    background: #EF6534;
+    padding: 0.25em 0.25em;
+    border-radius: 30px;
+}
+
+.kontakt-tlacitko:hover,
+.reference-tlacitko:hover {
+    filter: brightness(115%) contrast(85%);
+    border: 0;
+}
+
+
+#dovednosti td {
+    width: 33%;
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid gray;
+}
+
+#dovednosti {
+    border-collapse: collapse;
+}
+
+#reference img {
+    border: 1px solid gray;
+    padding: 6px;
+    box-shadow: 3px 3px 6px #999999;
+    margin-right: 6px;
+}
+
+
+
+
+
