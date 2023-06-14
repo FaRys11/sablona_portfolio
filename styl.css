@@ -20,6 +20,8 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 100px 0px 0px 0px;
+    min-height: 100vh;
+    min-width: 960px;
     
 }
 
@@ -72,7 +74,8 @@ footer {
     color: white;
     background: #414042;
     padding: 50px 0 0 0;
-    clip-path: polygon(0 30px, 100% 0, 100% 105%, 0 105%);
+    clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+
 }
 
 footer a {
