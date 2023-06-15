@@ -13,6 +13,7 @@
 html {
           background: #414042;
 }
+
 body {
     font: 14px "Poppins";
     background: #f9f9f9;
@@ -21,8 +22,8 @@ body {
     margin: 0;
     padding: 100px 0px 0px 0px;
     min-height: 100vh;
-    min-width: 960px;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 body > header {
@@ -70,12 +71,15 @@ body > header {
 footer {
     box-sizing: border-box;
     text-align: center;
-    height: 100px;
+    height: auto;
     color: white;
     background: #414042;
-    padding: 50px 0 0 0;
+    padding: 50px 0;
     clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+}
 
+.container {
+    flex: 1;
 }
 
 footer a {
@@ -127,16 +131,13 @@ article h1  {
     border-bottom: 4px solid #ef6534;
 }
 
-#dovednosti td {
-    width: 33%;
-    padding: 10px;
-    vertical-align: top;
-    border: 1px solid gray;
+article h3 {
+    color: #00386B;
+    font-weight: bolder;
 }
 
-#dovednosti {
-    border-collapse: collapse;
-}
+
+
 
 #reference img {
     border: 1px solid gray;
