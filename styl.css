@@ -65,7 +65,7 @@ body > header {
 }
 
 .navbar-nav > li > a.kontakt-tlacitko-mobilni {
-    border-radius: 0;
+    border-radius: 20px;
 }
 
 footer {
