@@ -40,33 +40,39 @@ body > header {
 
 .navbar-nav > li > a {
     color: #fff;
-    background-color: #00386B !important;
+    background-color: #00386B;
+    margin-left: 20px;   
 }
 
 .navbar-nav > li > a:hover {
-    background-color: initial;
     border-bottom: 2px solid #EF6534;
-    color: #fff;
+    color: #ffffff;
 }
 
-.navbar-nav > li > a.kontakt-tlacitko:hover,
-.navbar-nav > li > a.kontakt-tlacitko:focus,
-.navbar-nav > li > a.kontakt-tlacitko:active {
-    background-color: #ef6534 !important;
+.navbar-collapse {
+    background-color: #00386B !important;
+    text-align: center !important;
+    border-radius: 0 0 20px 20px !important;
 }
+
+
+
+.navbar-collapse > ul > li > a {
+    margin-left: 0 !important;
+}
+
+
 
 .aktivni {
     border-bottom: 2px solid #ef6534;
 }
 
-.navbar-nav { 
-    border-radius: 10px;
-    overflow: hidden;
-}
 
 .navbar-nav > li > a.kontakt-tlacitko-mobilni {
     border-radius: 20px;
+    background-color: #EF6534;
 }
+
 
 footer {
     box-sizing: border-box;
