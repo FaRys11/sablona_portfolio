@@ -37,33 +37,33 @@
     </div>
     
     <!-- Navigace -->
-    <nav class=" navbar navbar-expand-md">
-        <div class="container" >
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse border-success" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item text-light">
-                <a class="nav-link" aria-current="page" href="index.html">DOMŮ</a>
-              </li>
-              <li class="nav-item ms-md-4 ms-lg-5">
-              <a class="nav-link" href="omne.html">O&nbspMNĚ</a>
-              </li>
-              <li class="nav-item ms-md-4 ms-lg-5">
-                <a class="nav-link" href="dovednosti.html">DOVEDNOSTI</a>
-              </li>
-              <li class="nav-item ms-md-4 ms-lg-5">
-                <a class="nav-link" href="reference.html">REFERENCE</a>
-              </li>
-              <li class="nav-item ms-md-4 ms-lg-5">
-                <a class="nav-link aktivni " href="kontakt.html">KONTAKT</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <nav class=" navbar navbar-expand-md">
+            <div class="container" >
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse border-success" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item text-light">
+                    <a class="nav-link" aria-current="page" href="index.html">DOMŮ</a>
+                  </li>
+                  <li class="nav-item ms-md-4 ms-lg-5">
+                    <a class="nav-link" href="omne.html">O&nbspMNĚ</a>
+                  </li>
+                  <li class="nav-item ms-md-4 ms-lg-5">
+                    <a class="nav-link" href="dovednosti.html">DOVEDNOSTI</a>
+                  </li>
+                  <li class="nav-item ms-md-4 ms-lg-5">
+                    <a class="nav-link" href="reference.html">REFERENCE</a>
+                  </li>
+                  <li class="nav-item ms-md-4 ms-lg-5">
+                    <a class="nav-link aktivni" href="kontakt.html">KONTAKT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 </header>
 
     <article class="container container-fluid mb-4 mt-4">
@@ -74,15 +74,40 @@
         <section class="d-flex align-items-center mb-4">
           <div>
             <img src="obrazky/email.png" alt="email" class="vlevo me-3" />
-            <p>
-              Pokud mi chcete něco sdělit, napište mi email na <strong>hobi (zavináč) hobi (tečka) cz</strong> nebo využijte formuláře níže.
-            </p>
-            <p class="centrovany">
-              <iframe frameborder="0" scrolling="no" width="500px" height="220px" src="http://www.itnetwork.cz/service/mail_form.php?hash=kod-vaseho-mailformu"></iframe>
-            </p>
+            <div d-flex mb-6>
+              <p">
+                Pokud mi chcete něco sdělit, napište mi email na <span class="fw-bold">hobi (zavináč) hobi (tečka) cz</span> nebo využijte formuláře níže.
+              </p>
+            </div>
           </div>
         </section>
-        <div class="cistic"></div>
+        <form method="post" action="https://formmail.jtwds.cz/scripts/free/form_mail_utf8.asp">
+
+          <input type="hidden" name="prijemce_email" value="uzivatel@domena.cz">
+          <input type="hidden" name="hlavicka" value="ano">
+          <input type="hidden" name="polozka_01_nazev" value="Dotaz">
+        
+          <div class="form-group">
+            <label>Jméno a příjmení</label>
+            <input type="text" name="odesilatel_jmeno" class="form-control">
+          </div>
+        
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="text" name="odesilatel_email" class="form-control">
+          </div>
+        
+          <div class="form-group">
+            <label>Váš dotaz</label>
+            <textarea name="polozka_01_telo" rows="5" class="form-control"></textarea>
+          </div>
+        
+          <div class="form-group">
+            <br><button type="submit" class="btn btn-success">Odeslat formulář</button>
+          </div>
+        
+        </form>
+        
     </article>
 
     <footer class="footer">
