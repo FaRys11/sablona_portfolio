@@ -32,7 +32,7 @@ body > header {
     background: #00386B;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -62,16 +62,15 @@ body > header {
 }
 
 
-
 .aktivni {
     border-bottom: 2px solid #ef6534;
 }
 
 
-.navbar-nav > li > a.kontakt-tlacitko-mobilni {
+/* .navbar-nav > li > a.kontakt-tlacitko-mobilni {
     border-radius: 20px;
     background-color: #EF6534;
-}
+} */
 
 
 
