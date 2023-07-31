@@ -175,6 +175,10 @@ article h3 {
     background:  #00386B !important;
     }
     
+    .kontakt-tlacitko:hover {
+    filter: none;
+    border: 0;
+    }
 }
 
 #dovednosti td {
