@@ -16,55 +16,49 @@
 </head>
 
 <body>
-  <header>
-    <!-- Logo -->
-        <nav class="navbar bg-body-tertiary">
-          <div class="container ">
-            <a class="navbar-brand" href="#">
-              <div class="d-flex align-items-center">
-                <img src="obrazky/logo.png" alt="Logo" class="img-fluid mr-3 d-none d-sm-block" style="max-width: 30px;">
-                <div class="m-2 text-white lh-1">
-                  <div class="h5 mb-0 d-flex flex-wrap">Honza <span class="fw-bolder">BITTNER</span></div>
-                  <small class="small">web developer</small>
-                </div>
-              </div>
-            </a>
-          </div>
-        </nav>
-
-    <div class="menu-toggle">
-        <i class="fa fa-bars"></i>
-    </div>
-    
+  <header class="container-fluid">
     <!-- Navigace -->
-        <nav class=" navbar navbar-expand-md">
-            <div class="container" >
-              <a class="navbar-brand" href="#"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse border-success" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item text-light">
-                    <a class="nav-link" aria-current="page" href="index.html">DOMŮ</a>
-                  </li>
-                  <li class="nav-item ms-md-4 ms-lg-5">
-                    <a class="nav-link" href="omne.html">O&nbspMNĚ</a>
-                  </li>
-                  <li class="nav-item ms-md-4 ms-lg-5">
-                    <a class="nav-link" href="dovednosti.html">DOVEDNOSTI</a>
-                  </li>
-                  <li class="nav-item ms-md-4 ms-lg-5">
-                    <a class="nav-link" href="reference.html">REFERENCE</a>
-                  </li>
-                  <li class="nav-item ms-md-4 ms-lg-5">
-                    <a class="nav-link aktivni" href="kontakt.html">KONTAKT</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-</header>
+
+    <nav class="container navbar navbar-expand-md py-2 py-lg-4 py-xl-4 py-md-1 py-sm-3 d-flex justify-content-end">
+      <div class="container">
+        <div class=" container d-flex align-items-center">
+          <img src="obrazky/logo.png" alt="Logo" class="img-fluid mr-3 logo">
+          <div class="m-2 text-white lh-1">
+            <div class="h5 mb-0">Honza <span class="fw-bolder">BITTNER</span></div>
+            <small class="small">web developer</small>
+          </div>
+        </div>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse border-success justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item text-light">
+              <a class="nav-link aktivni" aria-current="page" href="index.html">DOMŮ</a>
+            </li>
+            <li class="nav-item ms-md-4 ms-lg-5">
+              <a class="nav-link" href="omne.html">O&nbspMNĚ</a>
+            </li>
+            <li class="nav-item ms-md-4 ms-lg-5">
+              <a class="nav-link" href="dovednosti.html">DOVEDNOSTI</a>
+            </li>
+            <li class="nav-item ms-md-4 ms-lg-5">
+              <a class="nav-link" href="reference.html">REFERENCE</a>
+            </li>
+            <li class="nav-item ms-md-4 ms-lg-5">
+              <a class="nav-link kontakt-tlacitko kontakt-tlacitko-mobilni" href="kontakt.html">KONTAKT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
 
     <article class="container container-fluid mb-4 mt-4">
         <header>
@@ -81,26 +75,18 @@
             </div>
           </div>
         </section>
-        <form method="post" action="https://formmail.jtwds.cz/scripts/free/form_mail_utf8.asp">
-
-          <input type="hidden" name="prijemce_email" value="uzivatel@domena.cz">
-          <input type="hidden" name="hlavicka" value="ano">
-          <input type="hidden" name="polozka_01_nazev" value="Dotaz">
-        
-          <div class="form-group">
-            <label>Jméno a příjmení</label>
-            <input type="text" name="odesilatel_jmeno" class="form-control">
-          </div>
-        
-          <div class="form-group">
-            <label>E-mail</label>
-            <input type="text" name="odesilatel_email" class="form-control">
-          </div>
-        
-          <div class="form-group">
-            <label>Váš dotaz</label>
-            <textarea name="polozka_01_telo" rows="5" class="form-control"></textarea>
-          </div>
+        <div class="form-group">
+          <label for="jmenoPrijmeni">Jméno a příjmení:</label>
+          <input type="text" class="form-control" id="jmenoPrijmeni" placeholder="Zadejte jméno a příjmení">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" class="form-control" id="email" placeholder="Zadejte e-mail">
+        </div>
+        <div class="form-group">
+          <label for="dotaz">Váš dotaz:</label>
+          <textarea class="form-control" id="dotaz" rows="5" placeholder="Zadejte Váš dotaz"></textarea>
+        </div>
         
           <div class="form-group">
             <br><button type="submit" class="btn btn-success">Odeslat formulář</button>

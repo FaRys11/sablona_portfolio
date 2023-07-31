@@ -2,119 +2,117 @@
 <html lang="cs-cz">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Osobní portfolio programátora HoBiho." />
-    <meta name="keywords" content="portfolio, programátor, HoBi" />
-    <meta name="author" content="HoBi" />
-    <!-- Metatag pro přizpusobení šířce zařízení na kterém se stránka zobrazuje -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Moje první webová stránka</title>
-    <link rel="stylesheet" href="styl.css" type="text/css" />
-    <link rel="shortcut icon" href="obrazky/ikona.ico" />
-    <!-- Bootstrap styly -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <meta charset="utf-8" />
+  <meta name="description" content="Osobní portfolio programátora HoBiho." />
+  <meta name="keywords" content="portfolio, programátor, HoBi" />
+  <meta name="author" content="HoBi" />
+  <!-- Metatag pro přizpusobení šířce zařízení na kterém se stránka zobrazuje -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moje první webová stránka</title>
+  <link rel="stylesheet" href="styl.css" type="text/css" />
+  <link rel="shortcut icon" href="obrazky/ikona.ico" />
+  <!-- Bootstrap styly -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
-    
-    <header >
-        <!-- Logo -->
-        <nav class="navbar bg-body-tertiary">
-          <div class="container ">
-            <a class="navbar-brand" href="#">
-              <div class="d-flex align-items-center">
-                <img src="obrazky/logo.png" alt="Logo" class="img-fluid mr-3 d-none d-sm-block" style="max-width: 30px;">
-                <div class="m-2 text-white lh-1">
-                  <div class="h5 mb-0 d-flex flex-wrap">Honza <span class="fw-bolder">BITTNER</span></div>
-                  <small class="small">web developer</small>
-                </div>
-              </div>
-            </a>
+
+  <header class="container-fluid">
+    <!-- Navigace -->
+
+    <nav class="container navbar navbar-expand-md py-2 py-lg-4 py-xl-4 py-md-1 py-sm-3 d-flex justify-content-end">
+      <div class="container">
+        <div class=" container d-flex align-items-center">
+          <img src="obrazky/logo.png" alt="Logo" class="img-fluid mr-3 logo">
+          <div class="m-2 text-white lh-1">
+            <div class="h5 mb-0">Honza <span class="fw-bolder">BITTNER</span></div>
+            <small class="small">web developer</small>
           </div>
-        </nav>
-
-        <div class="menu-toggle">
-            <i class="fa fa-bars"></i>
         </div>
-        
-        <!-- Navigace -->
-        <nav class=" navbar navbar-expand-md">
-            <div class="container" >
-              <a class="navbar-brand" href="#"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse border-success" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item text-light">
-                    <a class="nav-link aktivni" aria-current="page" href="index.html">DOMŮ</a>
-                  </li>
-                  <li class="nav-item ms-md-4 ms-lg-5">
-                    <a class="nav-link" href="omne.html">O&nbspMNĚ</a>
-                  </li>
-                  <li class="nav-item ms-md-4 ms-lg-5">
-                    <a class="nav-link" href="dovednosti.html">DOVEDNOSTI</a>
-                  </li>
-                  <li class="nav-item ms-md-4 ms-lg-5">
-                    <a class="nav-link" href="reference.html">REFERENCE</a>
-                  </li>
-                  <li class="nav-item ms-md-4 ms-lg-5">
-                    <a class="nav-link  " href="kontakt.html">KONTAKT</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
 
-    <!-- Popis O mě -->
-    <article class="container mb-4 mt-4">
-      <div class="row">
-        <div class="col-md-6 order-md-2 text-center text-md-right mb-3 mb-md-0">
-          <img src="obrazky/avatar.jpg" class="img-fluid mx-auto d-block avatar" alt="Programátor HoBi" style="width: 300px">
-        </div>
-        <div class="col-md-6 order-md-1">
-          <header>
-            <h1 class="mb-4 fw-bolder text-uppercase">O mně</h1>
-          </header>
-          <section>
-            <p>
-              Vítejte na mém prvním webu, psát weby se teprve učím, ale myslím, že mi to docela jde.
-            </p>
-    
-            <p>
-              Jmenuji se Honza Bittner a je mi 16 let. Chodím na Střední průmyslovou školu v České Lípě na obor IT.
-              Kontaktovat mě můžete na <a href="kontakt.html">kontaktní stránce</a>.
-            </p>
-    
-            <p>
-              Rád čtu a někdy (hlavně v létě) i sportuju.
-            </p>
-    
-            <p>
-              Mým hlavním koníčkem (a doufám že jednou i zaměstnáním) je <strong>programování</strong>!
-            </p>
-    
-            <p class="mt-4 z-n1">
-              <a href="reference.html" class="reference-tlacitko">Moje reference</a>
-            </p>
-          </section>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse border-success justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item text-light">
+              <a class="nav-link aktivni" aria-current="page" href="index.html">DOMŮ</a>
+            </li>
+            <li class="nav-item ms-md-4 ms-lg-5">
+              <a class="nav-link" href="omne.html">O&nbspMNĚ</a>
+            </li>
+            <li class="nav-item ms-md-4 ms-lg-5">
+              <a class="nav-link" href="dovednosti.html">DOVEDNOSTI</a>
+            </li>
+            <li class="nav-item ms-md-4 ms-lg-5">
+              <a class="nav-link" href="reference.html">REFERENCE</a>
+            </li>
+            <li class="nav-item ms-md-4 ms-lg-5">
+              <a class="nav-link kontakt-tlacitko kontakt-tlacitko-mobilni" href="kontakt.html">KONTAKT</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </article>
-    
-    
-    
-    <!-- Footer -->
+    </nav>
 
-    <footer class="footer">
-      <div class="container text-center text-white">
-        Vytvořil &copy;HoBi 2021 pro <a href="https://itnetwork.cz" style="color: white;">itnetwork.cz</a>
+  </header>
+
+  <!-- Popis O mě -->
+  <article class="container mb-4 mt-4">
+    <div class="row" id="centrovac">
+      <div class="col-md-6 order-md-2 text-center text-md-right mb-3 mb-md-0">
+        <img src="obrazky/avatar.jpg" class="img-fluid mx-auto d-block avatar" alt="Programátor HoBi"
+          style="width: 300px">
       </div>
-    </footer>
+      <div class="col-md-6 order-md-1">
+        <header>
+          <h1 class="mb-4 fw-bolder text-uppercase">O mně</h1>
+        </header>
+        <section>
+          <p>
+            Vítejte na mém prvním webu, psát weby se teprve učím, ale myslím, že mi to docela jde.
+          </p>
 
-    <!-- Bootstrap javascript podpora-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+          <p>
+            Jmenuji se Honza Bittner a je mi 16 let. Chodím na Střední průmyslovou školu v České Lípě na obor IT.
+            Kontaktovat mě můžete na <a href="kontakt.html">kontaktní stránce</a>.
+          </p>
+
+          <p>
+            Rád čtu a někdy (hlavně v létě) i sportuju.
+          </p>
+
+          <p>
+            Mým hlavním koníčkem (a doufám že jednou i zaměstnáním) je <strong>programování</strong>!
+          </p>
+
+          <p class="mt-4 z-n1">
+            <a href="reference.html" class="reference-tlacitko">Moje reference</a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </article>
+
+
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="container text-center text-white">
+      Vytvořil &copy;HoBi 2021 pro <a href="https://itnetwork.cz" style="color: white;">itnetwork.cz</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap javascript podpora-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 <script src="js/styly.js"></script>
